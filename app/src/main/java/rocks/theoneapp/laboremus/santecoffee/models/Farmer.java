@@ -1,5 +1,6 @@
 package rocks.theoneapp.laboremus.santecoffee.models;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -16,6 +17,7 @@ public class Farmer implements Serializable {
     @SerializedName("gender")
     private String gender;
 
+    @NonNull
     @PrimaryKey
     @SerializedName("phone")
     private String phone;
